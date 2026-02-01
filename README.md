@@ -114,7 +114,7 @@ The easiest way to get started with Virtual Bank is using Docker:
 
 4. **Start the Docker containers**:
    ```bash
-   docker-compose up -d
+   docker compose up -d
    ```
    This will start PostgreSQL, Redis, and the Virtual Bank API server.
 
@@ -173,9 +173,9 @@ The image can be used in various ways:
      goldenthrust/virtual-bank
    ```
 
-3. **With Docker Compose** (recommended):
+3. **With Docker ** (recommended):
    ```yaml
-   # Sample docker-compose.yml snippet
+   # Sample docker-.yml snippet
    services:
      api:
        image: goldenthrust/virtual-bank
@@ -213,9 +213,9 @@ To run both the API backend and the client web frontend in Docker:
    .\start_app.ps1
    ```
 
-2. **Or manually with Docker Compose**:
+2. **Or manually with Docker **:
    ```bash
-   docker-compose up -d
+   docker- up -d
    ```
 
 3. **Access the applications**:
@@ -227,20 +227,20 @@ To run both the API backend and the client web frontend in Docker:
 4. **Create superusers** (optional):
    ```bash
    # For API
-   docker-compose exec api python manage.py createsuperuser
+   docker- exec api python manage.py createsuperuser
    
    # For client web app
-   docker-compose exec client python manage.py createsuperuser
+   docker- exec client python manage.py createsuperuser
    ```
 
 5. **View logs**:
    ```bash
    # View logs for all services
-   docker-compose logs -f
+   docker- logs -f
    
    # View logs for specific service
-   docker-compose logs -f api
-   docker-compose logs -f client
+   docker compose logs -f api
+   docker compose logs -f client
    ```
 
 ### Local Installation
