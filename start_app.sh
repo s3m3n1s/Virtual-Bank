@@ -24,4 +24,4 @@ echo "- Client Web Interface: http://localhost:${CLIENT_PORT:-8040}/"
 
 echo ""
 echo "Use the following command to see service logs:"
-echo "  docker-compose logs -f"
+echo "  docker compose logs -f"
