@@ -14,7 +14,7 @@ fi
 
 # Start all services
 echo "Starting Virtual Bank API and Client application..."
-docker-compose up -d
+docker compose up -d
 
 echo "Services started:"
 echo "- API: http://localhost:${API_PORT:-8030}/api/"
